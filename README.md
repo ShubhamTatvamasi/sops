@@ -39,6 +39,7 @@ AGE_PUBLIC_KEY=$(age-keygen -y ~/.config/sops/age/keys.txt)
 Encrypt your secret:
 ```bash
 sops encrypt \
+  --age "$AGE_PUBLIC_KEY" \
   ~/secrets/cloud.env > ~/secrets/cloud.env.enc
 ```
 
