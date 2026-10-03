@@ -5,9 +5,13 @@ Install `sops`:
 brew install sops age
 ```
 
-Generate a new key:
+Create age directory:
 ```bash
 mkdir -p ~/.config/sops/age
+```
+
+Generate a new key:
+```bash
 age-keygen -o ~/.config/sops/age/age.agekey
 ```
 
