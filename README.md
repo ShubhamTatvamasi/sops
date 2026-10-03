@@ -7,7 +7,8 @@ brew install sops age
 
 Generate a new key:
 ```bash
-age-keygen -o ~/.config/sops/age/keys.txt
+mkdir -p ~/.config/sops/age
+age-keygen -o ~/.config/sops/age/age.agekey
 ```
 
 Setup a secrets directory:
@@ -34,7 +35,6 @@ AGE_PUBLIC_KEY=$(age-keygen -y ~/.config/sops/age/keys.txt)
 Encrypt your secret:
 ```bash
 sops encrypt \
-  --age "$AGE_PUBLIC_KEY" \
   ~/secrets/cloud.env > ~/secrets/cloud.env.enc
 ```
 
