@@ -2,7 +2,7 @@
 
 Install `sops`:
 ```bash
-brew install sops
+brew install sops age
 ```
 
 Generate a new key:
