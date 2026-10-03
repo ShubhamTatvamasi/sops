@@ -19,8 +19,8 @@ Store your secrets on a file:
 ```bash
 vim ~/secrets/cloud.env
 ```
-```
 
+```
 DIGITALOCEAN_TOKEN=dop_v1_xxxxxxxxx
 ```
 
