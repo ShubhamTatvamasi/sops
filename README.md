@@ -12,7 +12,7 @@ mkdir -p ~/.config/sops/age
 
 Generate a new key:
 ```bash
-age-keygen -o ~/.config/sops/age/age.agekey
+age-keygen -o ~/.config/sops/age/keys.txt
 ```
 
 Setup a secrets directory:
